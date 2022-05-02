@@ -1,0 +1,7 @@
+{
+  "passengers": {
+    "adult": 1,
+    "child": 1,
+    "infant": 0
+  }
+}
