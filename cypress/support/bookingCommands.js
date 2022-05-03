@@ -1,5 +1,5 @@
 const {passengers} = require('../fixtures/passengers.json');
-const Person  = require('../Utils/Person.cjs');
+const Person  = require('../Utils/Person.js');
 
 let people = [];
 
