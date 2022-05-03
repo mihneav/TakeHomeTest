@@ -19,14 +19,6 @@ describe('example to-do app', () => {
     cy.bookNow();
   })
 
-  it('And book a flight', {
-    scrollBehavior: false
-  }, () => {
-    cy.selectAirline();
-    cy.selectStops();
-    cy.bookNow();
-  })
-
   it('And Fill personal information', {
     scrollBehavior: 'center'
   }, () => {

@@ -5,19 +5,12 @@ const {
 function randomDate(start, end) {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
   }
-  const birthdate = new randomDate(new Date(1930, 0, 1), new Date((2004, 11, 28)));
-  const passportIssuance = new randomDate(new Date(birthdate.getFullYear(), 0, 1), new Date());
-  const passportExpiry = new randomDate(new Date(), new Date(2042, 11, 28));
+  const birthdate = randomDate(new Date(1930, 0, 1), new Date((2004, 11, 28)));
+  const passportIssuance = randomDate(new Date(birthdate.getFullYear(), 0, 1), new Date());
+  const passportExpiry = randomDate(new Date(), new Date(2042, 11, 28));
 
 class Person {
     constructor() {
-      function randomDate(start, end) {
-        return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
-      }
-      const birthdate = new randomDate(new Date(1930, 0, 1), new Date((2004, 11, 28)));
-      const passportIssuance = new randomDate(new Date(birthdate.getFullYear(), 0, 1), new Date());
-      const passportExpiry = new randomDate(new Date(), new Date(2042, 11, 28));
-  
       this.firstName = faker.name.firstName();
       this.lastName = faker.name.lastName();
       this.email = faker.internet.email();

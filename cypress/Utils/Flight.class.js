@@ -1,5 +1,3 @@
-const { ModuleResolutionKind } = require("typescript");
-
 class Flight {
   constructor() {
     var flightDate = new Date();
