@@ -4,11 +4,11 @@ describe('example to-do app', () => {
     cy.clearLocalStorage();
   })
 
-  it('Opens the homepage', () => {
+  it('As a Customer I open the homepage', () => {
     cy.visit('/');
   })
 
-  it('Searches for a flight', {
+  it('And search for a flight', {
     scrollBehavior: false
   }, () => {
     cy.gotIt();
@@ -19,7 +19,15 @@ describe('example to-do app', () => {
     cy.bookNow();
   })
 
-  it('Fills personal information', {
+  it('And book a flight', {
+    scrollBehavior: false
+  }, () => {
+    cy.selectAirline();
+    cy.selectStops();
+    cy.bookNow();
+  })
+
+  it('And Fill personal information', {
     scrollBehavior: 'center'
   }, () => {
     cy.checkFlightDetails();
@@ -27,7 +35,7 @@ describe('example to-do app', () => {
     cy.fillYourPersonalInformation();
   })
 
-  it('Fills extra traveller information', {
+  it('And fill extra traveller information', {
     scrollBehavior: 'center'
   }, () => {
     cy.fillExtraTravellerInformation();
