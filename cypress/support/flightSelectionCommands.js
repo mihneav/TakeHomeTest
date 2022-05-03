@@ -1,5 +1,5 @@
 const {passengers} = require('../fixtures/passengers.json');
-const Flight  = require('../Utils/Flight.class');
+const Flight  = require('../Utils/Flight');
 let flight = new Flight();
 
 Cypress.Commands.add('searchForFlight', () => {
@@ -15,7 +15,7 @@ Cypress.Commands.add('searchForFlight', () => {
 })
 
 Cypress.Commands.add('selectStops', () => {
-  cy.get('#direct ').click();
+  cy.get('#direct').click();
 })
 
 Cypress.Commands.add('selectAirline', () => {
