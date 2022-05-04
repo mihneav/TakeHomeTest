@@ -23,7 +23,7 @@ Cypress.Commands.add('selectAirline', () => {
 })
 
 Cypress.Commands.add('bookNow', () => {
-  cy.get('[data-a].iberia .btn:first').scrollIntoView().click();
+  cy.get(`[data-a].${flight.airline.toLowerCase()} .btn:first`).scrollIntoView().click();
 })
 
 Cypress.Commands.add('checkBookingDetails', () => {

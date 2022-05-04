@@ -14,7 +14,7 @@ class Person {
       this.firstName = faker.name.firstName();
       this.lastName = faker.name.lastName();
       this.email = faker.internet.email();
-      this.phoneNumber = faker.phone.phoneNumber();
+      this.phoneNumber = faker.phone.phoneNumber().substring(0, 9);
       this.address = faker.address.streetAddress();
       this.country = 'United Kingdom'; //Some countries missing on phptravels.net. E.G.: Dominican Republic
       this.birthday = Math.floor(Math.random() * 29) + 1;

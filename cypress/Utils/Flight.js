@@ -10,7 +10,7 @@ class Flight {
     this.departure = "MAD"
     this.destination = "BCN"
     this.date = flightDate
-    this.airline = 'Iberia'
+    this.airline = 'Vueling'
   }
 }
 
